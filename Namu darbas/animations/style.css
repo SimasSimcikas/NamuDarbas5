@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #0c2d57;
+}
+
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: #fc6736;
+}
+
+.translate {
+  background-color: #ffb0b0;
+  width: 200px;
+  font-weight: bold;
+  height: 200px;
+  font-size: 2rem;
+  margin: 40px;
+  display: inline-block;
+  border: 3px solid cyan;
+  border-radius: 10px;
+  transition: 1s;
+  text-align: center;
+}
+
+.translate:hover {
+  cursor: pointer;
+  background-color: violet;
+  color: wheat;
+  box-shadow: 0 0 50px rebeccapurple;
+  transform: translate(30px, 10px);
+}
+
+.rotate {
+  background-color: #ffb0b0;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  height: 200px;
+  font-size: 2rem;
+  margin: 40px;
+  display: inline-block;
+  border: 3px solid red;
+  border-radius: 30px;
+  transition: 2s;
+}
+
+.rotate:hover {
+  cursor: pointer;
+  background-color: violet;
+  color: wheat;
+  box-shadow: 0 0 100px rebeccapurple;
+  transform: rotate(180deg);
+}
+
+.scale {
+  background-color: #ffb0b0;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  height: 200px;
+  font-size: 2rem;
+  margin: 40px;
+  display: inline-block;
+  border: 3px solid blue;
+  border-radius: 20px;
+  transition: 1.5s;
+}
+
+.scale:hover {
+  cursor: pointer;
+  background-color: violet;
+  color: wheat;
+  box-shadow: 0 0 100px rebeccapurple;
+  transform: scaleX(1.5);
+  transform: scaleY(1.5);
+}
+
+.line {
+  background-color: #f3b95f;
+  color: aqua;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 300px;
+  transition-duration: 1s;
+}
+
+section:hover .line {
+  cursor: pointer;
+  width: 100%;
+  color: blue;
+  background-color: red;
+  border-radius: 30px 0 0 30px;
+}
+
+.line:nth-of-type(1n) {
+  transition-timing-function: ease;
+  transition: 2s;
+}
+
+.line:nth-of-type(2n) {
+  transition-timing-function: linear;
+  transition: 1s;
+}
